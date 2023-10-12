@@ -5,7 +5,7 @@ public class Driver {
     {
         Counter counter= new WordProcessor();
         counter.countWords("mohan khati");
-        counter.countLetters("mohan khati");
+        counter.countLetters("this is mohan");
         counter.getLength("mohan khati");
 
 
