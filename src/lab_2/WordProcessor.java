@@ -12,12 +12,16 @@ public class WordProcessor implements Counter {
 
     @Override
     public int countLetters(String sentence) {
+        String withoutSpaces = sentence.replaceAll("\\s", "");
+        int letterCount=withoutSpaces.length();
+
         int letters = 0;
         boolean allLetters = true;
-        for (int i = 0; i < sentence.length(); i++) {
+        for (int i = 0; i < letterCount; i++) {
             if (Character.isLetter(sentence.charAt(i))) {
                 letters++;
-            } else {
+            }
+            else {
                 allLetters = false;
                 break;
             }
@@ -36,9 +40,9 @@ public class WordProcessor implements Counter {
 
     @Override
     public int getLength(String sentence) {
-        String withoutSpaces=sentence.replaceAll("\\S","");
-        int lettercount=withoutSpaces.length();
-        System.out.println("The length of the sentence is: " + lettercount);
+//        String withoutSpaces=sentence.replaceAll("\\S","");
+//        int lettercount=withoutSpaces.length();
+        System.out.println("The length of the sentence including space is: " + sentence.length());
 
         return 0 ;
     }
