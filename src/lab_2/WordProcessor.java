@@ -12,16 +12,19 @@ public class WordProcessor implements Counter {
 
     @Override
     public int countLetters(String sentence) {
+        //removing spaces
         String withoutSpaces = sentence.replaceAll("\\s", "");
         int letterCount=withoutSpaces.length();
 
         int letters = 0;
         boolean allLetters = true;
         for (int i = 0; i < letterCount; i++) {
-            if (Character.isLetter(sentence.charAt(i))) {
+            //checking whether character is letter or not
+            if (Character.isLetter(withoutSpaces.charAt(i))) {
                 letters++;
             }
             else {
+                //of not letter set allletters to false
                 allLetters = false;
                 break;
             }
