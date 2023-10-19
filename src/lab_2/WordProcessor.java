@@ -1,6 +1,9 @@
+
 package lab_2;
 
+
 public class WordProcessor implements Counter {
+
     private String text;
 
     @Override
