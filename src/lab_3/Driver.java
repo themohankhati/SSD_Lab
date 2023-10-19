@@ -11,7 +11,7 @@ public class Driver {
         }
         System.out.println("Numbers stored : ");
         System.out.println(stats);
-//        System.out.println("Average = " + stats.getAverage());
+        System.out.println("Average = " + stats.getAverage());
         System.out.println("Count = " + stats.getCount());
         System.out.println("Total = " + stats.getTotal());
         System.out.println("Minimum value = " + stats.getB());
