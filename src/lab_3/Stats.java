@@ -12,6 +12,7 @@ public class Stats {
     int count;
 
     /**
+     * Adds an integer value to the array
      *
      * @param value integer input given to the addValue method
      *
@@ -21,6 +22,7 @@ public class Stats {
         count++;}
 
     /**
+     * Gets the count of the elements of the array
      *
      * @return returns the length of numbers array
      */
@@ -29,6 +31,7 @@ public class Stats {
     }
 
     /**
+     * Gets the maximum value from the array.
      *
      * @return returns the maximum value from numbers array
      */
@@ -40,8 +43,9 @@ public class Stats {
     }
 
     /**
+     * Gets the minimum value from the array.
      *
-     * @return returns the minimum value from numbers array
+     * @return returns the minimum value from numbers array.
      */
     public int getB() {int min = numbers[0];
         for (int i = 1; i < numbers.length; i++) {
@@ -52,6 +56,7 @@ public class Stats {
     }
 
     /**
+     * Gets the total sum of the values in the array.
      *
      * @return returns the total value of array numbers
      */
@@ -64,6 +69,8 @@ public class Stats {
     }
 
     /**
+     * Gets the average value of the elements in the array.
+     * 
      * @return returns the average of numbers array
      */
     public double getAverage() {
@@ -77,9 +84,21 @@ public class Stats {
         //returns the average of array numbers
         return y;
     }
+    /**
+     * Returns the string representation of the number array.
+     * 
+     * @return A string representation of the number array.
+     */
     @Override
     public String toString() {return Arrays.toString(numbers);
     }
+    
+    
+    /**
+     * Constructor for the Stats class.
+     * 
+     * @param capacity The initial capacity of the numbers only.
+     */
     public Stats(int capacity) {
         numbers = new int[capacity];
     }}
