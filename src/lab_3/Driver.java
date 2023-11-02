@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  * Driver class with main method.
- * @author Mr. Mohan&Manoj
+ * @author Mr. Mohan&Manoj;
  */
 public class Driver {
 	

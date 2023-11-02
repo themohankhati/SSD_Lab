@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * This is a class
- * @author Mr. Mohan
+ * @author Mr. Mohan&Manoj
  */
 public class Stats {
     int[] numbers;
