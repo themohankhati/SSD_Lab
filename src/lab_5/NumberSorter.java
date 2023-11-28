@@ -14,24 +14,25 @@ public class NumberSorter {
 		//Add the initial array of numbers to the source stack
 		for (int number: numbers)
 			srcStack.push(number);
-			
-		//if srcStack size is greater than 0.
-			while(srcStack.size()>0)
+//			System.out.println(srcStack.push(number));
+	
+		while(!srcStack.isEmpty())
+		{
+			Integer next=srcStack.pop();
+//			System.out.println(next);
+			//if destStack is not empty and the current element is greater than the top element of destStack
+			while (!destStack.isEmpty() && ((ascending && destStack.peek()>next)))
 			{
-				Integer next = srcStack.pop();
 				
-				if(destStack.size()>0)
-				{
-					srcStack.push(destStack.pop());
-				}
-				
-				else
-				{
-					destStack.push(next);
-				}
+				//move the elements from destStack to srcStack until the correct position is found
+				srcStack.push(destStack.pop());
 			}
+			
+			destStack.push(next);		
+		}
+		//print the sorted destStack.
+		System.out.println(destStack);
 		
-		
-	}
 
+	}
 }
