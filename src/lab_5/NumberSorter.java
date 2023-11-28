@@ -14,6 +14,22 @@ public class NumberSorter {
 		//Add the initial array of numbers to the source stack
 		for (int number: numbers)
 			srcStack.push(number);
+			
+		//if srcStack size is greater than 0.
+			while(srcStack.size()>0)
+			{
+				Integer next = srcStack.pop();
+				
+				if(destStack.size()>0)
+				{
+					srcStack.push(destStack.pop());
+				}
+				
+				else
+				{
+					destStack.push(next);
+				}
+			}
 		
 		
 	}
