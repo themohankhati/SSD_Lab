@@ -16,6 +16,7 @@ public class NumberSorter {
 			srcStack.push(number);
 //			System.out.println(srcStack.push(number));
 	
+		//sorting algorithm
 		while(!srcStack.isEmpty())
 		{
 			Integer next=srcStack.pop();
