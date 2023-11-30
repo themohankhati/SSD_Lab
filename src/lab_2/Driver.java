@@ -7,7 +7,7 @@ public class Driver {
     {
         Scanner sentence=new Scanner(System.in);
         System.out.println("Enter the sentence: ");
-        String Sentence=sentence.nextLine();
+        String sc=sentence.nextLine();
 
         Scanner text=new Scanner(System.in);
         System.out.println("Enter the text: ");
@@ -17,7 +17,7 @@ public class Driver {
         wordProcessor.setText(txt);
 
         //if the sentence is passed null
-        if (Sentence==null ||Sentence.trim().isEmpty())
+        if (sc==null ||sc.trim().isEmpty())
         {
             wordProcessor.countWords(txt);
             wordProcessor.getLength(txt);
@@ -26,9 +26,9 @@ public class Driver {
         }
         else {
             Counter counter = new WordProcessor();
-            counter.countWords(Sentence);
-            counter.getLength(Sentence);
-            counter.countLetters(Sentence);
+            counter.countWords(sc);
+            counter.getLength(sc);
+            counter.countLetters(sc);
         }
     }
 }

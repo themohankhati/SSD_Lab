@@ -10,21 +10,23 @@ public class ArrayProcessor {
 			//initialize a counter to track the number of elements in the array.
 			int count=0;
 			
-			//infinite loop to iterate through the array elements
-			while(true) {
-				
-				//attempt to access the element at the current index
-				Object t =a[count];
-				
-				//increment the counter to move to the next index
+			//iterate through the array element
+			for(Object ignored:a )
+			{
+				//increment the counter to move on to next index
 				count++;
-		}
+		
+			}
+			
+			//return the length, which represent the length of array.
+			return count;
+			
 		}
 		
 		catch(Exception e)
 		{
 			//if a exception occurs, handle it here.
-			System.out.println("error!");
+			System.out.printf("An error occurred: " ,e.getMessage());
 		}
 		
 		//this line will never be reached due to the infinite loop, but it's necessary for compilation
