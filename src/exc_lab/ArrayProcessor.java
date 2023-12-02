@@ -1,7 +1,16 @@
 package exc_lab;
 
+/**
+ * This is a class
+ * @author Mr. Mohan&Manoj
+ */
 public class ArrayProcessor {
 
+	/**
+	 * 
+	 * @param a array of objects given to the method getArrayLength
+	 * @return returns the length of an array
+	 */
 	//method to get the length of the array where Object[] a is array of objects
 	int getArrayLength(Object[] a)
 	{
