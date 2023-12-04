@@ -2,6 +2,10 @@ package lab_5;
 
 import java.util.Stack;
 
+/**
+ * This is a class
+ * @author Mr. Mohan&Manoj
+ */
 public class NumberSorter {
 	void sort (int [] numbers, boolean ascending)
 	{
@@ -17,21 +21,23 @@ public class NumberSorter {
 //			System.out.println(srcStack.push(number));
 	
 		//sorting algorithm
-		while(!srcStack.isEmpty())
+		while((srcStack.size()>0))
 		{
 			Integer next=srcStack.pop();
-//			System.out.println(next);
-			//if destStack is not empty and the current element is greater than the top element of destStack
-			while (!destStack.isEmpty() && ((ascending && destStack.peek()>next)))
+////			System.out.println(next);
+//			if destStack is not empty and the current element is greater than the top element of destStack
+			while ((destStack.size()>0) && ((ascending && destStack.peek()>next)))
 			{
 				
 				//move the elements from destStack to srcStack until the correct position is found
 				srcStack.push(destStack.pop());
 			}
 			
+			//
 			destStack.push(next);		
+			
 		}
-		//print the sorted destStack.
+//		print the sorted destStack.
 		System.out.println(destStack);
 		
 
