@@ -24,12 +24,12 @@ public class Driver {
 		
 //		
 		WordCounter wc=new WordCounter();
-		wc.addWord("mohan");
-		wc.addWord("manoj");
-		System.out.println(wc.wordMap);
+//		wc.addWord("mohan");
+//		wc.addWord("manoj");
+//		System.out.println(wc.wordMap);
 		
-//		wc.addSentence("This sentence has the word has in it twice");
-//		wc.outputResults();
+		wc.addSentence("This sentence has the word has in it twice");
+		wc.outputResults();
 
 	}
 

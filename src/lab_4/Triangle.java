@@ -98,7 +98,6 @@ public class Triangle {
 		return sideA + sideB + sideC / 3;
 	}
 
-/////////////////////////////////////////////////////
 	/**
 	 * Constructor
 	 *
@@ -131,6 +130,6 @@ public class Triangle {
 	 * Creates an equilateral triangle with all sides set to 1
 	 */
 	public Triangle() {
-		sideA = sideB = sideC = 1;
+		sideA = sideB = sideC = -2;
 	}
 }

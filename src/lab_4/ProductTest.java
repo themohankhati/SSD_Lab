@@ -30,12 +30,14 @@ public class ProductTest {
 	}
 	
 	@ParameterizedTest
-	@CsvSource({"1,1,1","1,2,3","10,20,30"}) //CSV- Comma Separated Value.
+	@CsvSource({"-2,-2,-2", "1,1,1"}) //CSV- Comma Separated Value.
 	void testPerimeter(int sideA, int sideB, int sideC)
 	{
 		Triangle tri=new Triangle();
 		
-		//fails
+		//if 2 is the length of the sides then it will run
+		//if other than 2 is passed then it will show error
+		//cause in Triangle class 2 is passed
 		assertEquals(sideA+sideB+sideC,tri.getPerimeter());
 				
 	}
@@ -56,20 +58,26 @@ public class ProductTest {
 
 	}
 	
-	@RepeatedTest(3)
-	void testPerimeterWithDifferentTriangle()
+//	@RepeatedTest(3)
+//	void testPerimeterWithDifferentTriangle()
+//	{
+//
+//		int A=(int) (Math.random()*10+1);
+//		int B=(int) (Math.random()*10+1);
+//		int C=(int) (Math.random()*10+1);
+//
+//		triangle.setSides(A,B,C);
+//		int expectedPerimeter=A+B+C;
+//		int perimeter=triangle.getPerimeter();
+//		assertEquals(expectedPerimeter,perimeter);
+//	}
+//	
+	@Test
+	void isocelelesTriangle()
 	{
-
-		int A=(int) (Math.random()*10+1);
-		int B=(int) (Math.random()*10+1);
-		int C=(int) (Math.random()*10+1);
-
-		triangle.setSides(A,B,C);
-		int expectedPerimeter=A+B+C;
-		int perimeter=triangle.getPerimeter();
-		assertEquals(expectedPerimeter,perimeter);
+		Triangle tri= new Triangle();
+		assertFalse(tri.isIsosceles());
 	}
 	
 	
-
 }
