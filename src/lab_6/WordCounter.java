@@ -24,6 +24,7 @@ public class WordCounter {
 		
 		else
 		{
+			//if word is new
 			wordMap.put(word, 1);
 
 			//if no, insert the word with the occurrence value

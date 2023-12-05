@@ -130,6 +130,6 @@ public class Triangle {
 	 * Creates an equilateral triangle with all sides set to 1
 	 */
 	public Triangle() {
-		sideA = sideB = sideC = -2;
+		sideA = sideB = sideC = 2;
 	}
 }

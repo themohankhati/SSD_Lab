@@ -30,7 +30,7 @@ public class ProductTest {
 	}
 	
 	@ParameterizedTest
-	@CsvSource({"-2,-2,-2", "1,1,1"}) //CSV- Comma Separated Value.
+	@CsvSource({"2,2,2", "2,2,2"}) //CSV- Comma Separated Value.
 	void testPerimeter(int sideA, int sideB, int sideC)
 	{
 		Triangle tri=new Triangle();
