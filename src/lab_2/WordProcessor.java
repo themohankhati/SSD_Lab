@@ -1,11 +1,17 @@
 
 package lab_2;
-
+/**
+ * This is class which implements Counter interface.
+ */
 
 public class WordProcessor implements Counter {
 
     private String text;
-
+    
+    /**
+     * Counts the number of words.
+     * @param sentence the input sentence to the method countWords
+     */
     @Override
     public int countWords(String sentence) {
         if (sentence==null)
@@ -86,6 +92,8 @@ public class WordProcessor implements Counter {
     }
     @Override
     public int getLength(String sentence) {
+    	
+    	//if the sentence is passed null then the length of text should be displayed.
         if (sentence == null) {
             System.out.println("The length of the sentence including space is: " + text.length());
 
