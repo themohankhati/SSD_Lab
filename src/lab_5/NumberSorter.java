@@ -7,6 +7,12 @@ import java.util.Stack;
  * @author Mr. Mohan&Manoj
  */
 public class NumberSorter {
+	
+	/**
+	 * This is a sort method.
+	 * @param numbers parameter is an array of an object.
+	 * @param ascending parameter is a boolean value.
+	 */
 	void sort (int [] numbers, boolean ascending)
 	{
 		//The source stack, from which the numbers are popped

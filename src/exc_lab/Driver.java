@@ -22,10 +22,10 @@ public class Driver extends ArrayProcessor {
 		ArrayProcessor ap=new ArrayProcessor();
 		int len=ap.getArrayLength(new String[] {"one", "two", "three"});
 		
-		System.out.println("Array length is " +len);
+		System.out.println("Array length is " +len+'.');
 		
 		Menu menu=new Menu();
-		menu.displayMenuOption(5);
+		menu.displayMenuOption(2);
 		}
 		
 		catch(Exception e)

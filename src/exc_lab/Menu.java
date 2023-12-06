@@ -9,7 +9,7 @@ public class Menu {
 	/**
 	 * 
 	 * @param opt integer input given to the displayMenuOption method
-	 * @throws InvalidOptionException
+	 * @throws InvalidOptionException throws an invalid exception error.
 	 */
 	void displayMenuOption(int opt) throws InvalidOptionException {
 		

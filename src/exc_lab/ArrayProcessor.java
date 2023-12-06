@@ -7,35 +7,32 @@ package exc_lab;
 public class ArrayProcessor {
 
 	/**
-	 * 
+	 * method to get the length of the array 
 	 * @param a array of objects given to the method getArrayLength
-	 * @return returns the length of an array
+	 * @return returns the actual length of an array
 	 */
-	//method to get the length of the array where Object[] a is array of objects
+	
+
 	int getArrayLength(Object[] a)
 	{
 		try
 		{
 			//initialize a counter to track the number of elements in the array.
 			int count=0;
-			
-			//iterate through the array element
-			for(Object ignored:a )
+
+			while(count<a.length)
 			{
-				//increment the counter to move on to next index
-				count++;
-		
+				Object t=a[count];
+			    count++;
 			}
-			
-			//return the length, which represent the length of array.
-			return count;
-			
+			return count; // return is mandatory.
 		}
 		
 		catch(Exception e)
 		{
 			//if a exception occurs, handle it here.
 			System.out.printf("An error occurred: " ,e.getMessage());
+
 		}
 		
 		//this line will never be reached due to the infinite loop, but it's necessary for compilation
